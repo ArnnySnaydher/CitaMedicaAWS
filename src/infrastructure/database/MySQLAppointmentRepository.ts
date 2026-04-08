@@ -1,6 +1,5 @@
 import { IAppointmentRDS } from '../../domain/repositories/IAppointmentRDS';
 import { Appointment } from '../../domain/entities/Appointment';
-import * as mysql from 'mysql2/promise';
 
 export class MySQLAppointmentRepository implements IAppointmentRDS {
   async saveToCountryDatabase(appointment: Appointment): Promise<boolean> {

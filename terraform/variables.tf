@@ -16,25 +16,6 @@ variable "dynamodb_table_name" {
   default     = "appointments-table-dev"
 }
 
-variable "mysql_server_name" {
-  description = "Endpoint del RDS MySQL (ya existente)"
-  type        = string
-  default     = "mysql-citamedica-001"
-}
-
-variable "mysql_admin_login" {
-  description = "Usuario MySQL"
-  type        = string
-  default     = "dbadmin"
-}
-
-variable "mysql_admin_password" {
-  description = "Contraseña MySQL"
-  type        = string
-  sensitive   = true
-  default     = "P@ssw0rd1234!"
-}
-
 variable "sns_topic_name" {
   description = "Nombre SNS Topic"
   type        = string
